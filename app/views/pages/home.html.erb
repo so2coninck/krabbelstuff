@@ -1,0 +1,55 @@
+<div id="content">
+  <div class="container-fluid">
+    <%= render "banner"%>
+      <div class="card-description">
+        <ul class="barre barre-pills barre-justified">
+          <li class='active'><a href="home">Home</a></li>
+          <li><a href="accueil">Accueil</a></li>
+          <li><a href="concept">Concept</a></li>
+          <li><a href="activite">Activités</a></li>
+          <li><a href="livredor">Livre d'or</a></li>
+        </ul>
+      </div>
+      <div class="card-description">
+        <div class="card-distributed">
+        <h2><strong><u>Crèche Familiale pour 26 enfants de 0-4 ans :</u></strong></h2>
+          <div class="card-home-left">
+              <ul>
+                <li>Nous facturons uniquement suivant les chèques services</li>
+                <li>Pas de dépassement des tarifs chèques service</li>
+                <li>No d’agrément : MR467/6</li>
+                <li>Convention avec le Ministère de l’Education nationale,de l’Enfance et de la jeunesse</li>
+                <li>Convention avec la commune d’Esch-sur-Sûre</li>
+              </ul>
+          </div>
+          <div class="card-home-right">
+            <ul>
+              <li class="image"> <%= image_tag("cheques_services.jpg", width: '200', height: '100', alt: 'Smt Logo',) %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-description">
+        <div class="card-distributed">
+          <h2><strong><u>Nos atouts :</u></strong></h2>
+          <div class="card-home-down">
+            <ul>
+              <li> Flexibilité : nous accueillons par heure, selon les désirs des parents et non par blocs d’heures obligatoires.</li>
+              <li>Pas de caution lors de l’inscription.</li>
+              <li>Tout est compris : les langes, lingettes…ne sont pas facturés.</li>
+              <li>Seules les présences réelles de l’enfant à la crèche sont facturées : s’il est excusé, ce n’est pas facturé.</li>
+              <li>Pour les enfants inscrits auparavant à la crèche entre 0 et 2 ans et qui vont au Précoce, nous continuons.</li>
+              <li>Personnel stable parlant Luxembourgeois, Français, Allemand et Portugais.</li>
+              <li>Plus de 10 ans d’expérience en tant que crèche.</li>
+              <li>Petite crèche qui privilégie l’ambiance familiale car le nombre de place est restreint.</li>
+              <li>Sorties chaque semaine : piscine, airtramp, hall sportif et excursions…</li>
+              <li>Personnel formé à l’encadrement de la petite enfance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <%=render "footer"%>
+
+  </div>
+</div>

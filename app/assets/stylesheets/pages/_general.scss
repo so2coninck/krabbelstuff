@@ -1,0 +1,201 @@
+/*general*/
+body{
+  background-color: #EDEFF0;
+  font:14px/1.5 Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3{
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  color: black;
+  font-size: 38px;
+  font-weight:bold;
+}
+
+h2{
+  color:black;
+  font-size: 25px;
+  font-weight: 300;
+  margin-top:5px;
+}
+h3{
+  color:black;
+  font-size: 20px;
+  font-weight: 300;
+}
+p{
+  text-align: justify;
+  color: black;
+}
+
+a{/*a revoir*/
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #DD5555;
+  text-decoration: none;
+}
+.changement{
+  color:blue;
+}
+
+
+/*banner & footer*/
+.container-fluid{
+  width: 100%;
+  margin: 30px auto;
+}
+
+#content{
+  margin-left: 0px;
+}
+
+
+ /*body*/
+ /*general*/
+
+.card-description{
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+  /* menu deroulant*/
+
+.barre {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.barre > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.barre > li > a:hover, .barre > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.barre-justified{
+  width:100%;
+}
+.barre-justified, .barre-tabs.barre-justified {
+  width: 100%;
+}
+
+.barre-justified > li > a, .barre-tabs.barre-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.barre-pills > li {
+  float: left;
+}
+.barre-pills > li > a {
+  border-radius: 2px;
+}
+.barre-pills > li + li {
+  margin-left: 2px;
+}
+
+.barre-justified > li, .barre-tabs.barre-justified > li {
+  float: none;
+}
+.barre-pills > li.active > a, .barre-pills > li.active > a:hover, .barre-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #A8D08D;
+}
+
+
+
+
+.card-distributed{
+  width: 100%;
+  text-align: left;
+  font: 14px sans-serif;
+  border-radius: 4px;
+}
+.card-distributed ul h5{
+   list-style:none;
+   font-size: 20px;
+ }
+.card-left{
+  width:33%;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+.card-center{
+  width:33%;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+.card-right{
+  width:33%;
+  display:inline-block;
+  vertical-align:top;
+}
+.card-home-left{
+  width:70%;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+.card-home-left ul{
+  padding-left:10px;
+  margin-left:30px;
+}
+
+
+.card-home-right{
+  width:30%;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.card-home-right ul{
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.image{
+  list-style:none;
+}
+.card-home-down{
+  width:100%;
+  display:inline-block;
+  vertical-align:top;
+}
+.card-home-down ul{
+  padding-left:10px;
+  margin-left:30px;
+}
+
+.card-activite-down{
+  width:100%;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.card-activite-down ul{
+  padding-left:10px;
+  margin-left:30px;
+}
+
+@media (min-width: 768px) {
+  /* line 177, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_barres.scss */
+  .barre-justified > li, .barre-tabs.barre-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  /* line 180, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_barres.scss */
+  .barre-justified > li > a, .barre-tabs.barre-justified > li > a {
+    margin-bottom: 0;
+  }
+}

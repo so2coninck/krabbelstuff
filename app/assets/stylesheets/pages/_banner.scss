@@ -1,0 +1,54 @@
+
+.banner-description{
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  text-align:center;
+}
+
+#banner-distributed{
+  width: 100%;
+  text-align: left;
+  font: 14px sans-serif;
+  padding: 20px;
+  border-radius: 4px;
+}
+#banner-left{
+  width:40%;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+#banner-right{
+  width:60%;
+  display:inline-block;
+  vertical-align:top;
+}
+#banner-distributed ul{
+   list-style:none;
+   text-align:center;
+   font-family: 'Oleo Script';
+   font-size: 20px;
+   color:#DCD7D7;
+ }
+.banner-down-center {
+text-align:center;
+font-size:23px;
+margin-top:20px;
+}
+
+@media (max-width: 880px) {
+  #banner-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  #banner-distributed #banner-left,
+  #banner-distributed #banner-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+}
