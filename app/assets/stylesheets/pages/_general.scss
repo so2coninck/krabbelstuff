@@ -145,7 +145,6 @@ a:hover{
   width:70%;
   display:inline-block;
   vertical-align:top;
-  float:left;
 }
 .card-home-left ul{
   padding-left:10px;
@@ -156,7 +155,7 @@ a:hover{
 .card-home-right{
   width:30%;
   display:inline-block;
-  vertical-align:top;
+  float:right;
 }
 
 .card-home-right ul{
@@ -166,6 +165,7 @@ a:hover{
 }
 .image{
   list-style:none;
+  text-align:center;
 }
 .card-home-down{
   width:100%;
@@ -188,7 +188,7 @@ a:hover{
   margin-left:30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
   /* line 177, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_barres.scss */
   .barre-justified > li, .barre-tabs.barre-justified > li {
     display: table-cell;
@@ -198,4 +198,14 @@ a:hover{
   .barre-justified > li > a, .barre-tabs.barre-justified > li > a {
     margin-bottom: 0;
   }
+}
+@media (max-width: 880px) {
+
+ .card-description .card-distributed .card-home-left,
+ .card-description .card-distributed .card-home-right{
+   display: inline-block;
+   width:100%;
+    float:none;
+  }
+
 }

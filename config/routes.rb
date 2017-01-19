@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+resources :tasks
+
   get 'home' => 'pages#home'
 
   get 'accueil'=>'pages#accueil'
@@ -7,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'activite'=>'pages#activite'
 
-  get 'livredor'=>'pages#livre_d_or'
+  get "livredor", to:"pages#livre_d_or"
 
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

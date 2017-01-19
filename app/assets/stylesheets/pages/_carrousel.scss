@@ -1,47 +1,77 @@
-#carrousel{
-  width: 712px;
-  height: 400px;
-  margin: 0 auto;
-  position:relative;
-}
-.slide{
-  position: absolute;
-  top:0;
-  display: inline;
-  text-align: center;
-  width:712px;
-  height:400px;
-}
-
-.title{
-  position: absolute;
-  padding-left:12px;
-  width:700px;
-  line-height: 35px;
-  height:35px;
-  bottom:0;
-  left:0;
+.image-carousel {
+    width: 640px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin:0 auto;
+    .inner {
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: left 0.25s ease-out;
+    }
+.inner img{
+   height:400px;
+width:640px;
 }
 
-.navigation{
-  position: absolute;
-  bottom:38px;
-  right:5px;
- }
 
-.navigation span{
-  background:#000;
-  color:#fff;
-  padding: 2px 4px;
-  cursor: pointer;
- }
-.navigation span:hover,.navigation span.active{
-  background:#fff;
-  color:#000;
- }
+    .bubbles {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 5px;
 
+        .bubble {
+            margin: 2.5px;
+            background-color: white;
+            border-radius: 100000px;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            opacity: 0.25;
+            transition: opacity 0.1s linear;
+            cursor: pointer;
 
-.slide img {
-height:400px;
+            &:hover {
+                opacity: 0.65;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .next::after, .prev::after {
+        content: '>';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background-color: white;
+        font-size: 20px;
+        width: 1em;
+        height: 3em;
+        font-weight: bold;
+        font-family: sans-serif;
+        transform: translateY(-50%);
+        line-height: 3em;
+        box-sizing: border-box;
+        padding: 0 0.2em;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: opacity 0.1s linear;
+    }
+
+    .next:hover::after, .prev:hover::after {
+        opacity: 1;
+    }
+
+    .prev::after {
+        content: '<';
+        left: 0;
+    }
 }
-

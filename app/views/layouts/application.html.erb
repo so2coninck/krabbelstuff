@@ -11,8 +11,18 @@
   <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
+      <%= render "layouts/banner" %>
+
+
     <%= yield %>
+
+
+      <%= render "layouts/footer" %>
+
+
     <%= javascript_include_tag 'application' %>
-     <script type="text/javascript" src="javascripts/carrousel.js"></script>
+     <script src="javascripts/image-carousel.js"></script>
+<script type="text/scss" src="stylesheets/carrousel.scss"></script>
   </body>
 </html>

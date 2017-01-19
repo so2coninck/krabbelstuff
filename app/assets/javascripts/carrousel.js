@@ -1,74 +1,58 @@
-var carrousel = {
+let carousels = document.getElementsByClassName('image-carousel');
 
-nbSlide : 0,
-nbCurrent: 1,
-elemCurrent: null,
-elem: null,
-timer : null,
+[].forEach.call(carousels, function (c) {
+    let next = c.getElementsByClassName('next')[0],
+        prev = c.getElementsByClassName('prev')[0],
+        bubblesContainer = c.getElementsByClassName('bubbles')[0],
+        inner = c.getElementsByClassName('inner')[0],
+        imgs = inner.getElementsByTagName('img'),
+        currentImageIndex = 0,
+        width = 640,
+        bubbles = [];
 
-init : function(elem){
-    this.nbSlide = elem.find(".slide").length;
+    for (let i = 0; i < imgs.length; i++) {
+        let b = document.createElement('span');
+        b.classList.add('bubble');
+        bubblesContainer.appendChild(b);
+        bubbles.push(b);
 
-//Créer la pagination
-elem.append('<div class="navigation"></div>');
-for(var i=1;i<=this.nbSlide;i++){
-  elem.find(".navigation").append("<span>"+i+"</span>");
-  }
+        b.addEventListener('click', function () {
+            currentImageIndex = i;
+            switchImg();
+        });
+    }
 
-elem.find(".navigation span").click(function(){ carrousel.gotoSlide($(this).text());})
+    function switchImg () {
+        inner.style.left = -width * currentImageIndex + 'px';
 
-// initialisation du carrousel
-this.elem=elem;
-elem.find(".slide").hide();
-elem.find(".slide:first").show();
-this.elemCurrent = elem.find(".slide:first");
-this.elem.find(".navigation span:first").addClass("active");
+        bubbles.forEach(function (b, i) {
+            if (i === currentImageIndex) {
+                b.classList.add('active');
+            } else {
+                b.classList.remove('active');
+            }
+        });
+    }
 
-//on cree le timer
-carrousel.play();
-//stop quand on passe la souris sur la photo
+    next.addEventListener('click', function () {
+        currentImageIndex++;
 
-elem.mouseover(carrousel.stop);
-elem.mouseout(carrousel.play);
-},
+        if (currentImageIndex >= imgs.length) {
+            currentImageIndex = 0;
+        }
 
-gotoSlide : function(num){
-  if(num==this.nbCurrent){return false; }
-this.elemCurrent.fadeOut();
-this.elem.find("#slide"+num).fadeIn();
-this.elem.find(".navigation span").removeClass("active")
-this.elem.find(".navigation span:eq("+(num-1)+")").addClass("active");
-this.nbCurrent = num;
-this.elemCurrent = this.elem.find("#slide"+num);
-},
+        switchImg();
+    });
 
-next : function(){
-  var num = parseInt(this.nbCurrent) + 1;
-  if(num>this.nbSlide){
-    num = 1;
-  }
-  this.gotoSlide(num);
-},
+    prev.addEventListener('click', function () {
+        currentImageIndex--;
 
-prev : function(){
-  var num = parseInt(this.nbCurrent) - 1;
-  if(num<1){
-    num = this.nbSlide;
-  }
-  this.gotoSlide(num);
-},
+        if (currentImageIndex < 0) {
+            currentImageIndex = imgs.length - 1;
+        }
 
-stop : function(){
-  window.clearInterval(carrousel.timer);
-},
+        switchImg();
+    });
 
-play : function(){
-window.clearInterval(carrousel.timer);
-carrousel.timer = window.setInterval("carrousel.next()",5000);
-}
-
-
-}
-$(function(){
-  carrousel.init($("#carrousel"));
+    switchImg();
 });
