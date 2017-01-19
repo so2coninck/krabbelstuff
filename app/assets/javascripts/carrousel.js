@@ -1,7 +1,7 @@
-let carousels = document.getElementsByClassName('image-carousel');
+var carousels = document.getElementsByClassName('image-carousel');
 
 [].forEach.call(carousels, function (c) {
-    let next = c.getElementsByClassName('next')[0],
+    var next = c.getElementsByClassName('next')[0],
         prev = c.getElementsByClassName('prev')[0],
         bubblesContainer = c.getElementsByClassName('bubbles')[0],
         inner = c.getElementsByClassName('inner')[0],
@@ -10,8 +10,8 @@ let carousels = document.getElementsByClassName('image-carousel');
         width = 640,
         bubbles = [];
 
-    for (let i = 0; i < imgs.length; i++) {
-        let b = document.createElement('span');
+    for (var i = 0; i < imgs.length; i++) {
+        var b = document.createElement('span');
         b.classList.add('bubble');
         bubblesContainer.appendChild(b);
         bubbles.push(b);
