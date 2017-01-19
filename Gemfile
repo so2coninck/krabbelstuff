@@ -19,6 +19,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem'cloudinary','1.1.0'
 
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'
