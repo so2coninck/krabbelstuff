@@ -11,6 +11,8 @@ resources :tasks
 
   get "livredor", to:"pages#livre_d_or"
 
+  get "index" => 'tasks#index'
+
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
