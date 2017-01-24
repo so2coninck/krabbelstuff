@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
+resources :tasks
+   get 'home' => 'tasks#home'
 
-  get 'home' => 'pages#home'
+  get 'accueil'=>'tasks#accueil'
 
-  get 'accueil'=>'pages#accueil'
+  get 'concept'=>'tasks#concept'
 
-  get 'concept'=>'pages#concept'
+  get 'activite'=>'tasks#activite'
 
-  get 'activite'=>'pages#activite'
+  get "livredor" => "tasks#index"
 
-  get "livredor", to:"pages#livre_d_or"
+  get "newtask" => "tasks#new"
 
-  root to: 'pages#home'
+
+
+  root to: 'tasks#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -1,10 +1,13 @@
+   <%= render "layouts/banner2" %>
+
 <div class="card-description">
   <ul class="barre barre-pills barre-justified">
-    <li><a href="home">Home</a></li>
-    <li><a href="accueil">Accueil</a></li>
-    <li class='active'><a href="concept">Concept</a></li>
-    <li ><a href="activite">Activités</a></li>
-   </ul>
+     <li><a href="home"><%= image_tag("home.png", alt: 'home',) %></a></li>
+          <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
+          <li class='active'><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
+          <li ><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
+          <li ><a href="tasks"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
+  </ul>
 </div>
 
 <div class="card-description text-center">
@@ -13,28 +16,9 @@
 </div>
 
 
-
- <div class="card-description">
-         <div class="image-carousel">
-            <div class="inner">
-            <%= image_tag("1.jpg", alt: '1',) %>
-            <%= image_tag("2.jpg", alt: '2',) %>
-            <%= image_tag("3.jpg", alt: '3',) %>
-            <%= image_tag("4.jpg", alt: '4',) %>
-            <%= image_tag("5.jpg", alt: '5',) %>
-            </div>
-            <div class="bubbles"></div>
-            <div class="prev"></div>
-            <div class="next"></div>
-        </div>
-
-      </div>
-
-
-
 <div class="card-description">
   <div class="card-distributed">
-  <h2><strong><u>Objectifs de travail</u></strong></h2>
+  <h2><strong><u>Nos objectifs</u></strong></h2>
     <div class="card-left">
       <ul>
         <h5>Les 0 - 1 an : « le cocooning »</h5>

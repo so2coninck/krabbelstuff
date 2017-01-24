@@ -1,6 +1,6 @@
 /*general*/
 body{
-  background-color: #EDEFF0;
+  background:linear-gradient(#70ac48,#F7F25B );
   font:14px/1.5 Arial, Helvetica, sans-serif;
 }
 
@@ -36,10 +36,7 @@ a{/*a revoir*/
   text-decoration: none;
 }
 
-a:hover{
-  color: #DD5555;
-  text-decoration: none;
-}
+
 .changement{
   color:blue;
   font-size:20px;
@@ -53,7 +50,7 @@ a:hover{
 /*banner & footer*/
 .container-fluid{
   width: 100%;
-  margin: 30px auto;
+  margin: 15px auto;
 }
 
 #content{
@@ -65,14 +62,14 @@ a:hover{
  /*general*/
 
 .card-description{
-  background: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
   /* menu deroulant*/
@@ -90,6 +87,7 @@ a:hover{
 .barre > li > a:hover, .barre > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
+ border-radius: 50%;
 }
 .barre-justified{
   width:100%;
@@ -118,7 +116,8 @@ a:hover{
 }
 .barre-pills > li.active > a, .barre-pills > li.active > a:hover, .barre-pills > li.active > a:focus {
   color: #fff;
-  background-color: #A8D08D;
+  background-color: #F7F25B;
+  border-radius: 50%;
 }
 
 
@@ -200,6 +199,62 @@ a:hover{
   padding-left:10px;
   margin-left:30px;
 }
+
+
+.card-ldo .first{
+  position: relative;
+  width:100%;
+  display: flex;
+  justify-content:  space-around;
+}
+
+
+
+.card-ldo-left{
+  width:49%;
+  display:inline-block;
+  height: 208px;
+  }
+
+.card-ldo-left table {
+margin: 80px auto;
+}
+
+.card-ldo-left td{
+  padding : 10px;
+}
+
+.card-ldo-right{
+width:49%;
+  vertical-align:top;
+  display:inline-block;
+
+}
+.card-ldo-right p{
+ text-align:center;
+ padding-top:10px;
+}
+.card-ldo-down{
+  width:100%;
+  text-align: center;
+  padding-top:18px;
+}
+
+textarea {
+  width: 100%;
+  height: 171px;
+}
+
+
+.card-index table {
+  margin: 30px;
+}
+
+
+
+
+
+
 
 @media (min-width: 880px) {
   /* line 177, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_barres.scss */

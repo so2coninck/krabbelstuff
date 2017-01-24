@@ -34,7 +34,7 @@ var carousels = document.getElementsByClassName('image-carousel');
         });
     }
 
-    next.addEventListener('click', function () {
+ function showNext() {
         currentImageIndex++;
 
         if (currentImageIndex >= imgs.length) {
@@ -42,9 +42,9 @@ var carousels = document.getElementsByClassName('image-carousel');
         }
 
         switchImg();
-    });
+    }
 
-    prev.addEventListener('click', function () {
+    function showPrev() {
         currentImageIndex--;
 
         if (currentImageIndex < 0) {
@@ -52,7 +52,13 @@ var carousels = document.getElementsByClassName('image-carousel');
         }
 
         switchImg();
-    });
+    }
 
-    switchImg();
-});
+    next.addEventListener('click', showNext);
+
+    prev.addEventListener('click', showPrev);
+         switchImg();
+    setInterval(showNext,5000);
+
+
+    });

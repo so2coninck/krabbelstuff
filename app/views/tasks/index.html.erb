@@ -1,0 +1,32 @@
+ <%=render "layouts/banner3"%>
+
+
+  <div class="card-description">
+    <ul class="barre barre-pills barre-justified">
+     <li><a href="home"><%= image_tag("home.png", alt: 'home',) %></a></li>
+     <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
+     <li><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
+     <li><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
+     <li class='active'><a href="tasks"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
+   </ul>
+ </div>
+ <div class="card-description">
+   <div class="card-distributed">
+
+    <h2>Vos commentaires </h2>
+
+    <div class="card-index">
+
+      <%@tasks.each do |task| %>
+      <table>
+        <tr>
+         <td><%=link_to task.name, task_path(task) %>:          </td>
+         <td><%=task.description %></td>
+         <% end %>
+       </tr>
+     </table>
+   </div>
+
+   <%= link_to "add a new task", new_task_path %>
+ </div>
+</div>

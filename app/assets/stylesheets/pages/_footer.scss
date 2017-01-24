@@ -2,7 +2,7 @@
   /*general*/
 
 .footer-description{
-  background-color: #A8D08D;
+  background-color: #299727;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -29,10 +29,10 @@
 
 #footer-distributed #footer-right ul{
   display: inline-block;
-  color: #ffffff;
+  color: black;
   vertical-align: middle;
   margin:10px;
-  font-weight: normal;
+  font-weight: bold;
   font-size:14px;
   line-height:2;
   list-style:none;
@@ -48,11 +48,10 @@
 
 #footer-distributed #footer-left ul{
   display: inline-block;
-  color: #ffffff;
-
+  color: black;
+  font-weight: bold;
   vertical-align: middle;
   margin:0;
-  font-weight: normal;
   font-size:14px;
   line-height:2;
   list-style:none;

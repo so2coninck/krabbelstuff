@@ -1,10 +1,8 @@
-
 .banner-description{
-  background: white;
-  padding: 20px;
-  margin-bottom: 20px;
+  // background: #70ad47;
+  padding: 10px;
+  margin-bottom: 10px;
   border-radius: 4px;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   text-align:center;
 }
 
@@ -26,12 +24,17 @@
   display:inline-block;
   vertical-align:top;
 }
+
+#banner-right img{
+  width:640px;
+  height: 400px;
+}
 #banner-distributed ul{
    list-style:none;
    text-align:center;
    font-family: 'Oleo Script';
    font-size: 20px;
-   color:#DCD7D7;
+   color:#DCD7D7,#70ac48,#F7F25B;
  }
 .banner-down-center {
 text-align:center;
