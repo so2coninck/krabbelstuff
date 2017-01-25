@@ -1,31 +1,45 @@
 /*general*/
 body{
   background:linear-gradient(#70ac48,#F7F25B );
-  font:14px/1.5 Arial, Helvetica, sans-serif;
+  font:18px/1.5;
+  font-family: 'New Century Schoolbook', serif;
+  color:black;
 }
 
 h1, h2, h3{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'New Century Schoolbook', serif;
 }
 h1{
-  color: black;
+  color: #DD02A7;
   font-size: 38px;
   font-weight:bold;
 }
+h2 .citation{
+  color:black;
+}
+
 
 h2{
-  color:black;
+  color:#DD02A7;
   font-size: 25px;
-line-height: 40px;
+  line-height: 40px;
   margin-top:5px;
   margin-bottom:5px;
   text-align:center;
 }
+
+
+
 h3{
   color:black;
   font-size: 20px;
   font-weight: 300;
 }
+
+h5{
+  color:#3B5998;
+}
+
 p{
   text-align: justify;
   color: black;
@@ -50,13 +64,15 @@ a{/*a revoir*/
 /*banner & footer*/
 .container-fluid{
   width: 100%;
-  margin: 15px auto;
+  margin: 18px auto;
 }
 
 #content{
   margin-left: 0px;
 }
-
+.mission{
+  color:#3B5998;
+}
 
  /*body*/
  /*general*/
@@ -126,7 +142,7 @@ a{/*a revoir*/
 .card-distributed{
   width: 100%;
   text-align: left;
-  font: 14px sans-serif;
+  font: 18px 'New Century Schoolbook', serif;
   border-radius: 4px;
 }
 .card-distributed ul h5{
