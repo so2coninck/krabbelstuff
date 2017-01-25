@@ -25,10 +25,10 @@
   vertical-align:top;
 }
 
-#banner-right img{
-  width:640px;
-  height: 400px;
-}
+// #banner-right img{
+//   width:640px;
+//   height: 400px;
+// }
 #banner-distributed ul{
    list-style:none;
    text-align:center;
@@ -54,4 +54,9 @@ margin-top:20px;
     margin-bottom: 40px;
     text-align: center;
   }
+
+  #banner-distributed #banner-right img{
+
+  }
+
 }
