@@ -45,8 +45,6 @@ margin-top:20px;
 @media (max-width: 600px) {
   #banner-distributed{
     font: bold 14px sans-serif;
-    margin-left:0px;
-    margin-right:0px;
   }
 
   #banner-distributed #banner-left,
@@ -60,7 +58,7 @@ margin-top:20px;
   }
 
   #banner-distributed #banner-right .image-carousel{
-width:400px;
+width:100%;
 margin-left:0px;
     margin-right:0px;
   }
@@ -68,8 +66,6 @@ margin-left:0px;
 
 #banner-distributed #banner-right .image-carousel .inner img{
   width:100%;
-  margin-left:0px;
-    margin-right:0px;
 }
 
 
