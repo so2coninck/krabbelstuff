@@ -88,6 +88,12 @@ a{/*a revoir*/
   // box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
+.card-description ul, .card-description p{
+font-size:18px;
+
+}
+
+
   /* menu deroulant*/
 
 .barre {
@@ -284,11 +290,22 @@ textarea {
   }
 }
 @media (max-width: 880px) {
+  .card-description .card-distributed .card-home-left,
+  .card-description .card-distributed .card-home-right{
+    display: inline-block;
+    width:100%;
+    float:none;
+    }
 
- .card-description .card-distributed .card-home-left,
- .card-description .card-distributed .card-home-right{
-   display: inline-block;
-   width:100%;
+  .card-description{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card-left, .card-center, .card-right{
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
     float:none;
   }
 

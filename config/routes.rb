@@ -10,7 +10,9 @@ resources :tasks
 
   get "livredor" => "tasks#index"
 
-  get "newtask" => "tasks#new"
+  # get "tasks/new" => "tasks#new"
+
+  # post "tasks" => "tasks#create"
 
 
 

@@ -1,11 +1,44 @@
-<h1>Edit task</h1>
 
-<%= form_for @task do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
+ <%= render "layouts/banner5_livredor" %>
 
-  <%= f.label :description %>:
-  <%= f.text_field :description %><br />
 
-  <%= f.submit %>
-<% end %>
+  <div class="card-description">
+    <ul class="barre barre-pills barre-justified">
+     <li><a href="home"><%= image_tag("home.png", alt: 'home',) %></a></li>
+     <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
+     <li><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
+     <li><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
+     <li class='active'><a href="tasks"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
+   </ul>
+ </div>
+  <div class="card-description">
+    <div class="card-distributed">
+      <div class="card-ldo first">
+        <div class="card-ldo-left">
+          <table>
+            <tr>
+            <%= form_for @task do |f| %>
+
+              <td> Nom des Parents: </td>
+              <td> <%= f.text_field :name %></td>
+            </tr>
+
+            <tr>
+              <td>Prénom de l'Enfant: </td>
+              <td><%= f.text_field :child_name %></td>
+            </tr>
+
+            </table>
+          </div>
+          <div class="card-ldo-right">
+            <p> Votre message : </p>
+            <%= f.text_area :description %>
+          </div>
+          <div class="card-ldo-down">
+            <%= f.submit value="mise à jour"%>
+            <%= link_to "cancel", tasks_path %>
+            <% end %>
+          </div>
+      </div>
+    </div>
+  </div>
