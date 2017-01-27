@@ -31,7 +31,6 @@
   display: inline-block;
   color: black;
   vertical-align: middle;
-  margin:10px;
   font-weight: bold;
   font-size:14px;
   line-height:2;
@@ -62,11 +61,12 @@
 @media (max-width: 880px) {
   #footer-distributed{
     font: bold 14px sans-serif;
+    text-align: left;
   }
 
   #footer-distributed #footer-left,
   #footer-distributed #footer-right{
-    display: block;
+    display: inline-block;
     width: 100%;
     margin-bottom: 30px;
     text-align: left;

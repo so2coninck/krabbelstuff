@@ -112,16 +112,21 @@ font-size:18px;
  border-radius: 50%;
 }
 .barre-justified{
-  width:100%;
+  width:20%;
 }
 .barre-justified, .barre-tabs.barre-justified {
   width: 100%;
 }
 
-.barre-justified > li > a, .barre-tabs.barre-justified > li > a {
+.barre-justified > li > a , .barre-tabs.barre-justified > li > a {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
+
+.barre-justified > li > a > img{
+width:20%;
+}
+
 
 .barre-pills > li {
   float: left;
@@ -230,8 +235,6 @@ font-size:18px;
   justify-content:  space-around;
 }
 
-
-
 .card-ldo-left{
   width:49%;
   display:inline-block;
@@ -239,7 +242,7 @@ font-size:18px;
   }
 
 .card-ldo-left table {
-margin: 80px auto;
+margin: 46px auto;
 }
 
 .card-ldo-left td{
@@ -284,6 +287,11 @@ textarea {
     display: table-cell;
     width: 1%;
   }
+
+  .barre-justified > li > a > img{
+    width: 145px ;
+  }
+
   /* line 180, /usr/local/opt/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets/bootstrap/_barres.scss */
   .barre-justified > li > a, .barre-tabs.barre-justified > li > a {
     margin-bottom: 0;

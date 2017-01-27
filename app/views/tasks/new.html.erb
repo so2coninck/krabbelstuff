@@ -2,11 +2,11 @@
 
   <div class="card-description">
     <ul class="barre barre-pills barre-justified">
-     <li><a href="home"><%= image_tag("home.png", alt: 'home',) %></a></li>
-      <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
-      <li><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
-      <li ><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
-      <li class='active'><a href="tasks"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
+      <li><a><%= image_tag("home.png", alt: 'home',) %></a></li>
+      <li><a><%= image_tag("accueil.png", alt: 'accueil') %></a></li>
+      <li><a><%= image_tag("concept.png", alt: 'concept.png') %></a></li>
+      <li><a><%= image_tag("activite.png", alt: 'Activités') %></a></li>
+      <li class='active'><a><%= image_tag("livredor.png", alt: 'livredor') %></a></li>
     </ul>
  </div>
    <div class="card-description">
@@ -25,6 +25,11 @@
               <td>Prénom de l'Enfant: </td>
               <td><%= f.text_field :child_name %></td>
             </tr>
+            <tr>
+              <td>Année: </td>
+              <td><%= f.text_field :promotion %></td>
+            </tr>
+
 
             </table>
           </div>
@@ -33,9 +38,12 @@
             <%= f.text_area :description %>
           </div>
           <div class="card-ldo-down">
-            <%= f.submit value="valider"%>
+           <a> <%= f.submit value="valider", class: "button" %></a>
 
-            <%= link_to "cancel", tasks_path %>
+            <%= link_to "cancel", tasks_path, class: "button" %>
+
+
+
 
             <% end %>
           </div>

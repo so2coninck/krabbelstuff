@@ -18,14 +18,16 @@
         <tr>
           <th class="name">Parents</th>
           <th>Enfant</th>
-          <th>Message</th>
-          <th>edit</th>
+          <th>Année</th>
+          <th>message</th>
+          <th>Edit</th>
 
         </tr>
         <tr>
           <%@tasks.each do |task| %>
           <td><%=task.name%></td>
           <td><%=task.child_name%></td>
+          <td><%=task.promotion%></td>
           <td ><%=task.description %></td>
           <td><%= link_to "édit", edit_task_path(task.id) %> </td>
         </tr>
@@ -34,6 +36,8 @@
      </table>
    </div>
 
-   <%= link_to "Nouveau message", new_task_path %>
+   <%= link_to "Nouveau message", new_task_path, class: "button"%>
+
+
  </div>
 </div>
