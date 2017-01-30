@@ -71,6 +71,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.4)
+    custom_error_message (1.1.1)
     debug_inspector (0.0.2)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
@@ -238,6 +239,7 @@ DEPENDENCIES
   bootstrap-sass
   cloudinary (= 1.1.0)
   coffee-rails (~> 4.2)
+  custom_error_message (~> 1.1, >= 1.1.1)
   figaro
   font-awesome-sass
   jbuilder (~> 2.0)
