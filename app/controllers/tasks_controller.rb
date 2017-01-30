@@ -16,6 +16,7 @@ class TasksController < ApplicationController
    def create
     @task = Task.new(task_params)
     if @task.save
+      UserMailer.nvmsg.deliver_now
       redirect_to tasks_path
     else
       render :new

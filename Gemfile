@@ -21,7 +21,7 @@ gem'cloudinary','1.1.0'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'custom_error_message', '~> 1.1', '>= 1.1.1'
-
+gem 'letter_opener', group: :development
 
 group :development, :test do
   gem 'binding_of_caller'
