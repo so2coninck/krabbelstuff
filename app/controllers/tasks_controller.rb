@@ -5,6 +5,7 @@ class TasksController < ApplicationController
   end
 
   def show
+
     @task = Task.find(params[:id])
   end
 
@@ -12,16 +13,19 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
-  def create
+   def create
+    @task = Task.new(task_params)
+    if @task.save
+      redirect_to tasks_path
+    else
+      render :new
+    end
 
-    Task.create(task_params)
-
-    redirect_to tasks_path
   end
 
   def edit
     @task = Task.find(params[:id])
-      end
+  end
 
   def update
     @task = Task.find(params[:id])
@@ -40,7 +44,7 @@ class TasksController < ApplicationController
   private
 
     def task_params
-      params.require(:task).permit(:name, :child_name, :promotion, :description)
+      params.require(:task).permit(:name, :child_name, :promotion, :description, :status)
     end
 
     def set_task

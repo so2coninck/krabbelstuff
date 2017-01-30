@@ -1,17 +1,23 @@
-.card-index td, th{
+.card-index td, .card-index th{
 
     border:1px solid black;
     padding:6px;
     padding-left:10px;
     padding-right:10px;
-
 }
 
-
-th{
-
+.card-index th{
     text-align: center;
-  }
+    background-color:#E9EBEE;
+}
+
+.card-index td{
+    background-color:white;
+}
+
+.card-index table{
+  margin:30px auto;
+}
 
 .button {
  -webkit-border-radius: 4px;
@@ -25,9 +31,23 @@ th{
     color: black;
     padding: 8px 12px;
     text-decoration: none;
+    text-align:center;
 }
 
 .card-ldo-down a:hover, a:focus{
     color: black;
   text-decoration: underline;
+}
+
+
+.card-distributed .card-index table tr td{
+   border:1px solid black;
+    padding:6px;
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+.card-index-centered-button{
+  text-align:center;
 }

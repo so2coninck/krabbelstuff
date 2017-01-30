@@ -2,11 +2,11 @@
 
   <div class="card-description">
     <ul class="barre barre-pills barre-justified">
-      <li><a><%= image_tag("home.png", alt: 'home',) %></a></li>
-      <li><a><%= image_tag("accueil.png", alt: 'accueil') %></a></li>
-      <li><a><%= image_tag("concept.png", alt: 'concept.png') %></a></li>
-      <li><a><%= image_tag("activite.png", alt: 'Activités') %></a></li>
-      <li class='active'><a><%= image_tag("livredor.png", alt: 'livredor') %></a></li>
+     <li><a href="home"><%= image_tag("home.png", alt: 'home',) %></a></li>
+     <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
+     <li><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
+     <li><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
+     <li class='active'><a href="livredor"><%= image_tag("livredor.png", alt: 'livredor',) %></a>
     </ul>
  </div>
    <div class="card-description">
@@ -16,11 +16,16 @@
           <table>
             <tr>
             <%= form_for @task do |f| %>
-
+              <%if @task.errors.any? %>
+                <ul class="errors">
+                  <%@task.errors.full_messages.each do |message| %>
+                  <li><%=message%> </li>
+                  <%end%>
+                </ul>
+                <%end%>
               <td> Nom des Parents: </td>
               <td> <%= f.text_field :name %></td>
             </tr>
-
             <tr>
               <td>Prénom de l'Enfant: </td>
               <td><%= f.text_field :child_name %></td>
@@ -30,23 +35,19 @@
               <td><%= f.text_field :promotion %></td>
             </tr>
 
-
-            </table>
+           </table>
           </div>
           <div class="card-ldo-right">
             <p> Votre message : </p>
             <%= f.text_area :description %>
-          </div>
+            </div>
           <div class="card-ldo-down">
-           <a> <%= f.submit value="valider", class: "button" %></a>
-
-            <%= link_to "cancel", tasks_path, class: "button" %>
+              <%= f.submit value="Valider", class: "button" %>
 
 
-
+          </div>
 
             <% end %>
-          </div>
       </div>
     </div>
   </div>

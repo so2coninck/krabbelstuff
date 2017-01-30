@@ -1,46 +1,73 @@
-.banner-description{
+
+
+// .banner-description{
   // background: #70ad47;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
+  // padding: 10px;
+  // margin-bottom: 10px;
+  // border-radius: 4px;
+  // text-align:center;
+// }
+
+// #banner-distributed{
+//   width: 100%;
+//   text-align: left;
+//   font: 14px sans-serif;
+//   padding: 20px;
+//   border-radius: 4px;
+// }
+
+#banner-distributed ul{
+   list-style:none;
+ }
+
+//-----------------//
+//|banner commun   |//
+//-----------------//
+#banner-left, #banner-right{
+  width:50%;
+  display:inline-block;
+  vertical-align:top;
   text-align:center;
 }
 
-#banner-distributed{
-  width: 100%;
-  text-align: left;
-  font: 14px sans-serif;
-  padding: 20px;
-  border-radius: 4px;
-}
-#banner-left{
-  width:50%;
-  display:inline-block;
-  vertical-align:top;
-  float:left;
-}
-#banner-right{
-  width:50%;
-  display:inline-block;
-  vertical-align:top;
+#banner-left img, #banner-right img {
+width:640px;
+ height: 400px;
+ border-radius: 10px;
 }
 
-// #banner-right img{
-//   width:640px;
-//   height: 400px;
+
+//-----------------//
+//|banner left    |//
+//-----------------//
+
+#banner-left{
+  float:left;
+}
+
+
+//-----------------//
+//|banner right    |//
+//-----------------//
+
+// #banner-left ul {
+//  margin-bottom:0px;
+// padding:0px;
 // }
-#banner-distributed ul{
-   list-style:none;
-   text-align:center;
-   font-family: 'Oleo Script';
-   font-size: 20px;
-   color:#DCD7D7,#70ac48,#F7F25B;
- }
+
+//-----------------//
+//|banner center  |//
+//-----------------//
 .banner-down-center {
 text-align:center;
 font-size:23px;
-margin-top:20px;
+// margin-top:0px;
 }
+
+
+//-------------------//
+//|banner responsive|//
+//-------------------//
 
 @media (max-width: 600px) {
   #banner-distributed{

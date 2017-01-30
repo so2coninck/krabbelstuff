@@ -1,63 +1,38 @@
-  /*footer*/
-  /*general*/
 
 .footer-description{
   background-color: #299727;
-  padding: 10px;
-  margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   text-align:center;
 }
 
 #footer-distributed{
-  width: 100%;
-  text-align: left;
   font: 14px sans-serif;
-  margin-bottom: 20px;
   padding: 20px;
   border-radius: 4px;
 }
 
-
-  /*droite*/
- #footer-right{
-  width: 50%;
+ //-----------------//
+//|banner commun   |//
+//-----------------//
+ #footer-right, #footer-left{
+  width: 49%;
   display:inline-block;
-  vertical-align:top;
 }
 
-#footer-distributed #footer-right ul{
+#footer-distributed #footer-right ul, #footer-distributed #footer-left ul{
   display: inline-block;
   color: black;
   vertical-align: middle;
   font-weight: bold;
   font-size:14px;
-  line-height:2;
+  line-height:20px;
   list-style:none;
 }
 
-  /*gauche*/
-#footer-left{
-  width: 50%;
-  display:inline-block;
-  vertical-align:top;
-  float:left;
-  }
-
-#footer-distributed #footer-left ul{
-  display: inline-block;
-  color: black;
-  font-weight: bold;
-  vertical-align: middle;
-  margin:0;
-  font-size:14px;
-  line-height:2;
-  list-style:none;
-}
-
-/* rendre le footer responsive*/
-
+//-------------------//
+//|Footer responsive|//
+//-------------------//
 @media (max-width: 880px) {
   #footer-distributed{
     font: bold 14px sans-serif;

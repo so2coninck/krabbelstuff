@@ -7,12 +7,12 @@
      <li><a href="accueil"><%= image_tag("accueil.png", alt: 'accueil',) %></a></li>
      <li><a href="concept"><%= image_tag("concept.png", alt: 'concept.png',) %></a></li>
      <li><a href="activite"><%= image_tag("activite.png", alt: 'Activités',) %></a></li>
-     <li class='active'><a href="tasks"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
+     <li class='active'><a href="livredor"><%= image_tag("livredor.png", alt: 'livredor',) %></a></li>
    </ul>
  </div>
 <div class="card-description">
   <div class="card-distributed">
-      <h2>Vos messages </h2>
+      <h2><strong><u>Vos messages</u></strong></h2>
     <div class="card-index">
       <table>
         <tr>
@@ -20,24 +20,23 @@
           <th>Enfant</th>
           <th>Année</th>
           <th>message</th>
-          <th>Edit</th>
-
         </tr>
         <tr>
-          <%@tasks.each do |task| %>
-          <td><%=task.name%></td>
-          <td><%=task.child_name%></td>
-          <td><%=task.promotion%></td>
-          <td ><%=task.description %></td>
-          <td><%= link_to "édit", edit_task_path(task.id) %> </td>
-        </tr>
 
+          <%@tasks.each do |task| %>
+            <%if task.status == true %>
+              <td><%=task.name%></td>
+              <td><%=task.child_name%></td>
+              <td><%=task.promotion%></td>
+              <td ><%=task.description %></td>
+            </tr>
+        <% end %>
         <% end %>
      </table>
    </div>
-
-   <%= link_to "Nouveau message", new_task_path, class: "button"%>
-
+<div class="card-index-centered-button">
+   <%= link_to "Nouveau message", livredornew_path, class: "button"%>
+</div>
 
  </div>
 </div>

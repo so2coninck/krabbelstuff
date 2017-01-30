@@ -23,8 +23,8 @@ h2{
   color:#DD02A7;
   font-size: 25px;
   line-height: 40px;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top:10px;
+  margin-bottom:10px;
   text-align:center;
 }
 
@@ -50,7 +50,11 @@ a{/*a revoir*/
   text-decoration: none;
 }
 
+i{
+color:blue;
 
+
+}
 .changement{
   color:blue;
   font-size:20px;
@@ -242,7 +246,7 @@ width:20%;
   }
 
 .card-ldo-left table {
-margin: 46px auto;
+margin: 40px auto;
 }
 
 .card-ldo-left td{
@@ -257,7 +261,7 @@ width:49%;
 }
 .card-ldo-right p{
  text-align:center;
- padding-top:10px;
+ padding-top:18px;
 }
 .card-ldo-down{
   width:100%;
@@ -276,7 +280,12 @@ textarea {
 }
 
 
+.errors, .errors li {
+  color:red;
+  font:16px;
+  list-style: none;
 
+}
 
 
 
