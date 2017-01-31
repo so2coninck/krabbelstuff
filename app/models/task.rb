@@ -11,3 +11,4 @@ def send_nvmsg_email
   UserMailer.nvmsg.deliver_now
 end
 
+end
