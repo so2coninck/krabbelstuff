@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
   #   en.user_mailer.nvmsg.subject
   #
   def nvmsg
-    mail(to: "Krabbelsuff@gmail.com", subject: 'Krabbelsuff : nouveau message'
+    mail(to: "krabbelsuff@gmail.com", subject: 'Krabbelsuff : nouveau message'
     )
   end
 end
