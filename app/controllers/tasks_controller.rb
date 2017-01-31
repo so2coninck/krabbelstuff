@@ -17,6 +17,8 @@ class TasksController < ApplicationController
     @task = Task.new(task_params)
     if @task.save
        redirect_to tasks_url
+        flash[:notice] ="Votre message a été envoyé avec succès. Il apparaîtra sur le site dans quelques jours"
+
     else
       render :new
     end
