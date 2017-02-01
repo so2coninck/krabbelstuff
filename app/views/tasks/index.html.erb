@@ -13,32 +13,24 @@
 
   <p class="notice"><%= notice %></p>
 <div class="card-description">
+
   <div class="card-distributed">
       <h2><strong><u>Vos messages</u></strong></h2>
-    <div class="card-index">
-      <table>
-        <tr>
-          <th class="name">Parents</th>
-          <th>Enfant</th>
-          <th>Année</th>
-          <th>message</th>
-        </tr>
-        <tr>
-
-          <%@tasks.each do |task| %>
+  <div class="card-index">
+    <div class="card-index-centered-button">
+       <%= link_to "Nouveau message", livredornew_path, class: "button"%>
+    </div>
+     <div class="card-index-list">
+        <%@tasks.each do |task| %>
             <%if task.status == true %>
-              <td><%=task.name%></td>
-              <td><%=task.child_name%></td>
-              <td><%=task.promotion%></td>
-              <td ><%=task.description %></td>
-            </tr>
-        <% end %>
-        <% end %>
-     </table>
-   </div>
-<div class="card-index-centered-button">
-   <%= link_to "Nouveau message", livredornew_path, class: "button"%>
-</div>
+          <li>
+            <div class="lo-list"><%=task.name%> parent de <%=task.child_name%> année : <%=task.promotion%> </div>
+           <p><%=task.description %></p>
+            <% end %>
+          </li>
+          <% end %>
+      </div>
+    </div>
+  </div>
+  </div>
 
- </div>
-</div>

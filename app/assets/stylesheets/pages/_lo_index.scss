@@ -1,23 +1,14 @@
-.card-index td, .card-index th{
 
-    border:1px solid black;
-    padding:6px;
-    padding-left:10px;
-    padding-right:10px;
-}
-
-.card-index th{
-    text-align: center;
-    background-color:#E9EBEE;
+.card-index li{
+  list-style:none;;
+  background-color:#FAFAF9;
+  padding-left:10px;
 }
 
 .card-index td{
     background-color:white;
 }
 
-.card-index table{
-  margin:30px auto;
-}
 
 .button {
  -webkit-border-radius: 4px;
@@ -36,18 +27,14 @@
 
 .card-ldo-down a:hover, a:focus{
     color: black;
-  text-decoration: underline;
-}
-
-
-.card-distributed .card-index table tr td{
-   border:1px solid black;
-    padding:6px;
-    padding-left:10px;
-    padding-right:10px;
-
+  text-decoration: under  line;
 }
 
 .card-index-centered-button{
-  text-align:center;
+  margin-bottom: 15px;
+}
+
+.lo-list{
+  text-align:left;
+  text-decoration: underline;
 }
