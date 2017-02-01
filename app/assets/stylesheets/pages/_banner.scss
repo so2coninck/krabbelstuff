@@ -8,13 +8,13 @@
   // text-align:center;
 // }
 
-// #banner-distributed{
-//   width: 100%;
-//   text-align: left;
-//   font: 14px sans-serif;
-//   padding: 20px;
-//   border-radius: 4px;
-// }
+#banner-distributed{
+  width: 100%;
+  text-align: left;
+  font: 14px sans-serif;
+  padding: 20px;
+  border-radius: 4px;
+}
 
 #banner-distributed ul{
    list-style:none;
@@ -31,8 +31,8 @@
 }
 
 #banner-left img, #banner-right img {
-width:640px;
- height: 400px;
+ max-width:100%;
+  height:auto;
  border-radius: 10px;
 }
 
