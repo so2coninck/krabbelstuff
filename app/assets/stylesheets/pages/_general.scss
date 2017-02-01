@@ -117,7 +117,7 @@ font-size:18px;
   display: block;
   padding: 10px 15px;
 }
-.barre > li > a:hover, .barre > li > a:focus {
+.barre > li > a > img:hover, .barre > li > a > img:focus {
   text-decoration: none;
   background-color: #eeeeee;
  border-radius: 50%;
@@ -135,7 +135,7 @@ font-size:18px;
 }
 
 .barre-justified > li > a > img{
-width:20%;
+width:30%;
 }
 
 
@@ -152,10 +152,11 @@ width:20%;
 .barre-justified > li, .barre-tabs.barre-justified > li {
   float: none;
 }
-.barre-pills > li.active > a, .barre-pills > li.active > a:hover, .barre-pills > li.active > a:focus {
+.barre-pills > li.active > a > img, .barre-pills > li.active > a > img:hover, .barre-pills > li.active > a > img:focus {
   color: #fff;
   background-color: #F7F25B;
   border-radius: 50%;
+padding:10px;
 }
 
 
@@ -243,7 +244,7 @@ width:20%;
   position: relative;
   width:100%;
   display: flex;
-  justify-content:  space-around;
+  justify-content: space-around;
 }
 
 .card-ldo-left{
@@ -265,8 +266,9 @@ width:49%;
   vertical-align:top;
   display:inline-block;
 
+
 }
-.card-ldo-right p{
+.card-ldo-right f{
  text-align:center;
  padding-top:18px;
 }
@@ -274,6 +276,7 @@ width:49%;
   width:100%;
   text-align: center;
   padding-top:18px;
+  border-radius: 4px;
 }
 
 textarea {
@@ -326,11 +329,22 @@ textarea {
     padding-right: 10px;
   }
 
+.card-description p{
+text-align:left;
+
+}
   .card-left, .card-center, .card-right{
     width:100%;
     display:inline-block;
     vertical-align:top;
     float:none;
   }
+
+
+.card-ldo-right, .card-ldo-left{
+width:100%;
+ display:inline-block;
+
+}
 
 }

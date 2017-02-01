@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style type="text/css">
+body { font-family: Arial,Helvetica,sans-serif; font-size: 12px; }
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/jquery-carousels-resp.css">
+
+</head>
+
+<body>
+
+<h2>Demo: Build a Responsive jQuery Carousel</h2>
+
+<div class="carousel-data">
+    <ul>
+        <li><a href="javascript:;"><img src="assets/photo-gallery-10.jpg" alt="" /></a>
+            <span>Large tree glowing in the sunrise - very nice!</span></li>
+        <li><a href="javascript;;"><img src="assets/photo-gallery-11.jpg" alt="" /></a>
+            <span>The view from my imaginary balcony of the valley below is awesome</span></li>
+        <li><a href="javascript:;"><img src="assets/photo-gallery-12.jpg" alt="" /></a>
+            <span>Who would not want to visit the Great Barrier Reef?</span></li>
+    </ul>
+</div>
+
+<div class="carousel-wrapper">
+    <div class="carousel-image-title">
+        <div class="carousel-image"><a href="#"><img src="" alt="" /></a></div>
+        <div class="carousel-title"></div>
+    </div>
+    <div class="carousel-nav"></div>
+</div>
+
+
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+var carouselSettings = {
+        animateTime : 3000,
+        startAt : 1
+    },
+    activeSlide;
+
+function animateCarousel() {
+    activeSlide++;
+    if(activeSlide > $(".carousel-data ul li").length) activeSlide = 1;
+    loadNewSlide();
+}
+
+function loadNewSlide() {
+    var currentDataNode = $(".carousel-data ul li").eq(activeSlide-1);
+    $(".cnav-button").removeClass("current-cnav");
+    $(".carousel-image-title .carousel-image a").attr("href", currentDataNode.find("a").attr("href"));
+    $(".carousel-image-title img").attr("src", currentDataNode.find("img").attr("src")).hide();
+    $(".carousel-image-title .carousel-image img").fadeIn("slow");
+    $(".carousel-title").html(currentDataNode.find("span").html());
+    $(".cnav-button").eq(activeSlide-1).addClass("current-cnav");
+}
+
+$(document).ready(function(){
+    // Show carousel navigation buttons
+    var navCounter = 1;
+    $(".carousel-data li").each( function() {
+        $(".carousel-nav").append("<div class='cnav-button'>"+navCounter+"</div>");
+        navCounter++;
+    });
+
+    // Load first carousel slide
+    activeSlide = carouselSettings.startAt;
+    loadNewSlide();
+
+    // Init carousel animation time loop
+    var animateTime = setInterval('animateCarousel()', carouselSettings.animateTime);
+
+    // Navigation button click event handler
+    $(".cnav-button").click( function(){
+        clearInterval(animateTime);
+        var slideClicked = parseInt($(this).text());
+        if(slideClicked != activeSlide){
+            activeSlide = slideClicked;
+            loadNewSlide();
+        }
+    });
+});
+</script>
+
+
+</body>
+</html>
