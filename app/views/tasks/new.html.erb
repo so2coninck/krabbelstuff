@@ -20,9 +20,9 @@
                 <ul class="errors">
                   <%@task.errors.each_with_index do |message, i| %>
                   <li><%=message[1]%> </li>
-                  <%end%>
+                  <% end%>
                 </ul>
-                <%end%>
+                <% end%>
               <td> Nom des Parents: </td>
               <td> <%= f.text_field :name %></td>
             </tr>
@@ -40,14 +40,11 @@
           <div class="card-ldo-right">
             <p> Votre message : </p>
             <%= f.text_area :description %>
-            </div>
+          </div>
           <div class="card-ldo-down">
               <%= f.submit value="Valider", class: "button" %>
-
-
           </div>
-
-            <% end %>
+          <% end %>
       </div>
     </div>
   </div>
