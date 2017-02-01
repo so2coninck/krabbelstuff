@@ -90,7 +90,8 @@ font-size:15px;
 margin-bottom:15px;
 }
  #banner-distributed #banner-left img,  #banner-distributed #banner-right img{
-  width:100%;
+  max-width:100%;
+  height:auto;
  }
 
   #banner-distributed #banner-right .image-carousel{
@@ -100,9 +101,9 @@ margin-left:0px;
   }
 
 
-#banner-distributed #banner-right .image-carousel .inner img{
-   width:100%;
-}
+// #banner-distributed #banner-right .image-carousel .inner img{
+//    width:100%;
+// }
 
 
 }
