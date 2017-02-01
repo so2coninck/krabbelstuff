@@ -44,7 +44,9 @@
 #banner-left{
   float:left;
 }
-
+#banner-left ul, #banner-right ul{
+  padding-left:0px;
+}
 
 //-----------------//
 //|banner right    |//
