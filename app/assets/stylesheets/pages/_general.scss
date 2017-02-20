@@ -113,7 +113,7 @@ font-size:18px;
   list-style: none;
 }
 .barre > li > a {
-  position: relative;
+  // position: relative;
   display: block;
   padding: 10px 15px;
 }
@@ -178,6 +178,14 @@ padding:10px;
   vertical-align:top;
   float:left;
 }
+
+.home-card-left{
+  width:50%;
+  display:inline-block;
+  vertical-align:top;
+  float:left;
+}
+
 .card-center{
   width:33%;
   display:inline-block;
@@ -189,40 +197,20 @@ padding:10px;
   display:inline-block;
   vertical-align:top;
 }
-.card-home-left{
-  width:70%;
+.home-card-right{
+  width:50%;
   display:inline-block;
   vertical-align:top;
 }
-.card-home-left ul{
-  padding-left:10px;
-  margin-left:30px;
+
+.home-card-left h5,.home-card-right h5{
+text-align:center;
 }
 
 
-.card-home-right{
-  width:30%;
-  display:inline-block;
-  float:right;
-}
-
-.card-home-right ul{
-  margin-top: 0;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
 .image{
   list-style:none;
   text-align:center;
-}
-.card-home-down{
-  width:100%;
-  display:inline-block;
-  vertical-align:top;
-}
-.card-home-down ul{
-  padding-left:10px;
-  margin-left:30px;
 }
 
 .card-activite-down{
@@ -317,12 +305,14 @@ textarea {
   }
 }
 @media (max-width: 880px) {
-  .card-description .card-distributed .card-home-left,
-  .card-description .card-distributed .card-home-right{
+  .card-description .card-distributed .home-card-left,
+  .card-description .card-distributed .home-card-right{
     display: inline-block;
     width:100%;
     float:none;
+    padding-bottom:10px;
     }
+
 
   .card-description{
     padding-left: 10px;
