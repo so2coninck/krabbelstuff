@@ -9,7 +9,7 @@ resources :tasks
 
   get 'concept'=>'tasks#concept'
 
-  get 'activite'=>'tasks#activite'
+  get 'activités'=>'tasks#activite'
 
   get "livredor" => "tasks#index"
 
