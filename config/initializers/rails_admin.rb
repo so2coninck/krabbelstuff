@@ -5,7 +5,21 @@ RailsAdmin.config do |config|
     end
   end
 
-  config.main_app_name { ['My App', 'Admin'] }
+
+config.model 'Task' do
+  list do
+    field :name
+    field :description
+    field :child_name
+    field :promotion
+    field :status
+
+
+    end
+  end
+
+
+     config.main_app_name { ['My App', 'Admin'] }
   ### Popular gems integration
 
   ## == Devise ==
