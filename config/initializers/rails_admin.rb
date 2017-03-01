@@ -6,7 +6,7 @@ RailsAdmin.config do |config|
   end
 
 
-config.model 'Tasks' do
+config.model 'Task' do
   list do
     field :name
     field :description
