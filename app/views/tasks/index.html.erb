@@ -22,7 +22,7 @@
     </div>
      <div class="card-index-list">
         <%@tasks.each do |task| %>
-            <%if task.status == true %>
+            <%if task.statut == true %>
           <li>
             <div class="lo-list"><%=task.name%> parent de <%=task.child_name%> année : <%=task.promotion%> </div>
            <p><%=task.description %></p>

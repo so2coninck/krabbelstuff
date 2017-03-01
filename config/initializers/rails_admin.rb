@@ -12,7 +12,7 @@ config.model 'Task' do
     field :description
     field :child_name
     field :promotion
-    field :status
+    field :statut
 
 
     end
