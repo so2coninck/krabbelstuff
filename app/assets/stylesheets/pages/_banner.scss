@@ -20,23 +20,24 @@
 
 #banner-distributed ul{
    list-style:none;
-
  }
 
 //-----------------//
 //|banner commun   |//
 //-----------------//
-#banner-left, #banner-right{
+#banner-left, #banner-right, #banner-right-act{
   display:inline-block;
   vertical-align:middle;
   width:49%;
+
 }
 #banner-left{
 height:400px;
 // background-color:blue;
+
 }
 
-#banner-right{
+#banner-right, #banner-right-act{
   // background-color:yellow;
 height:300px;
 }
@@ -49,11 +50,21 @@ margin:auto;
 }
 #banner-left img{
 height:400px;
+}
 
+#banner-right-act img{
+ border-radius: 10px;
+text-align:center;
+margin:auto;
+width:250px;
 }
-#banner-left ul,#banner-right ul{
+
+
+
+
+#banner-left ul,#banner-right ul, #banner-right-act ul{
   margin-bottom:0px;
-}
+ }
 
 
 //-----------------//
