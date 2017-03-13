@@ -1,20 +1,24 @@
 
+// #banner-distributed{
+// // background-color: red;
 
-// .banner-description{
-  // background: #70ad47;
-  // padding: 10px;
-  // margin-bottom: 10px;
-  // border-radius: 4px;
-  // text-align:center;
+// #banner-left{
+// background-color:blue;
+
 // }
 
+// #banner-right, #banner-right-act{
+// background-color:yellow;
+// }
+
+
+
 #banner-distributed{
-// background-color: red;
   text-align: center;
   font: 14px sans-serif;
   padding: 20px;
   border-radius: 4px;
-    height:400px;
+    height:auto;
 
 }
 
@@ -25,27 +29,14 @@
 //-----------------//
 //|banner commun   |//
 //-----------------//
-#banner-left, #banner-right, #banner-right-act{
+#banner-left, #banner-right{
   display:inline-block;
-  vertical-align:middle;
+  vertical-align:top;
   width:49%;
 
 }
-#banner-left{
-height:350px;
-// background-color:blue;
 
-}
 
-#banner-right, #banner-right-act{
-// background-color:yellow;
-height:250px;
-}
-
-#banner-right-act{
-// background-color:yellow;
-height:350px;
-}
 
 #banner-left img, #banner-right img{
  border-radius: 10px;
@@ -53,23 +44,14 @@ text-align:center;
 height:250px;
 margin:auto;
 }
-#banner-left img{
-height:350px;
-}
-
-#banner-right-act img{
- border-radius: 10px;
-text-align:center;
-margin:auto;
-height:300px;
-width:50%;
-}
+// #banner-left img{
+// height:350px;
+// }
 
 
-
-
-#banner-left ul,#banner-right ul, #banner-right-act ul{
+#banner-left ul,#banner-right ul{
   margin-bottom:0px;
+padding:0px;
  }
 
 

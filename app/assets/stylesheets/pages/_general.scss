@@ -2,18 +2,19 @@
 body{
   background:linear-gradient(#70ac48,#F7F25B );
   font:18px/1.5;
-  font-family: 'New Century Schoolbook', serif;
+  // font-family: 'New Century Schoolbook', serif;
   color:black;
 }
 
-h1, h2, h3{
-  font-family: 'New Century Schoolbook', serif;
-}
+// h1, h2, h3{
+//   font-family: 'New Century Schoolbook', serif;
+// }
 h1{
   color: #DD02A7;
   font-size: 38px;
   font-weight:bold;
 }
+
 h2 .citation{
   color:black;
 }
@@ -165,7 +166,7 @@ padding:10px;
 .card-distributed{
   width: 100%;
   text-align: left;
-  font: 18px 'New Century Schoolbook', serif;
+  // font: 18px 'New Century Schoolbook', serif;
   border-radius: 4px;
 }
 .card-distributed ul h5{
