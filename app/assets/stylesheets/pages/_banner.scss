@@ -1,7 +1,7 @@
 
 // #banner-distributed{
 // // background-color: red;
-
+// }
 // #banner-left{
 // background-color:blue;
 
@@ -110,6 +110,9 @@ margin-bottom:15px;
  #banner-distributed #banner-left img,  #banner-distributed #banner-right img{
   width:100%;
  }
+  #banner-distributed #banner-left img{
+ height:50%;
+}
 
   #banner-distributed #banner-right .image-carousel{
 width:50%;
