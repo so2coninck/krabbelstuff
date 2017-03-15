@@ -15,6 +15,8 @@ resources :tasks
 
   get "livredornew" => "tasks#new"
 
+  get "impressum" =>"tasks#impressum"
+
 
 
 
