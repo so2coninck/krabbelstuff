@@ -1,13 +1,17 @@
 
 // #banner-distributed{
-// // background-color: red;
+// background-color: red;
 // }
 // #banner-left{
 // background-color:blue;
 
 // }
+// #banner-right{
+//   background-color:green;
 
-// #banner-right, #banner-right-act{
+// }
+
+// #banner-right-fixe{
 // background-color:yellow;
 // }
 
@@ -29,27 +33,41 @@
 //-----------------//
 //|banner commun   |//
 //-----------------//
-#banner-left, #banner-right{
+#banner-left, #banner-right-fixe{
   display:inline-block;
   vertical-align:top;
   width:49%;
-
 }
 
 
 
-#banner-left img, #banner-right img{
+#banner-left img, #banner-right-fixe img{
  border-radius: 10px;
-text-align:center;
-height:250px;
+text-align:left;
+height:70%;
+width:70%;
 margin:auto;
 }
 // #banner-left img{
 // height:350px;
 // }
 
+#banner-right{
+  display:inline-block;
+  vertical-align:top;
+  width:49%;
+  height:248px;
+}
 
-#banner-left ul,#banner-right ul{
+
+#banner-right img{
+ border-radius: 10px;
+text-align:center;
+height:220px;
+margin:auto;
+}
+
+#banner-left ul,#banner-right-fixe ul,#banner-right ul  {
   margin-bottom:0px;
 padding:0px;
  }
@@ -88,7 +106,8 @@ font-size:20px;
   }
 
   #banner-distributed #banner-left ,
-  #banner-distributed #banner-right{
+  #banner-distributed #banner-right,
+   #banner-distributed #banner-right-fixe{
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -98,7 +117,8 @@ font-size:20px;
 }
 
 #banner-distributed #banner-left ul ,
-  #banner-distributed #banner-right ul{
+  #banner-distributed #banner-right ul,
+   #banner-distributed #banner-right-fixe ul{
     padding:0px;
   }
 
@@ -107,7 +127,9 @@ text-align:center;
 font-size:15px;
 margin-bottom:15px;
 }
- #banner-distributed #banner-left img,  #banner-distributed #banner-right img{
+ #banner-distributed #banner-left img,
+ #banner-distributed #banner-right img,
+ #banner-distributed #banner-right-fixe img{
   width:100%;
  }
   #banner-distributed #banner-left img{
@@ -119,12 +141,7 @@ width:50%;
 margin-left:0px;
     margin-right:0px;
   }
-#banner-distributed #banner-right{
-    height:50%
-  }
-// #banner-distributed #banner-right .image-carousel .inner img{
-//    width:50%;
-// }
+
 
 
 }
