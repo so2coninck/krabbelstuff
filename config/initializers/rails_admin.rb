@@ -15,6 +15,7 @@ config.model 'Task' do
     field :statut
 
 
+
     end
   end
 
